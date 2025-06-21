@@ -205,7 +205,6 @@ footer {
     align-items: center;
     justify-content: center;
     width: 100%;
-    gap: 20px;
   }
 
   .nav-links li a {
@@ -213,6 +212,7 @@ footer {
   }
   ul.nav-links {
     padding: 0px;
+    margin-top: 20px;
   }
 
   .section2 p {
