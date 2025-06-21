@@ -1,0 +1,261 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  margin: 0px;
+  box-shadow: black 0px 0px 10px 0px;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.head-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.inner-head {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-weight: bold;
+}
+
+ul.nav-links {
+  margin: 0px;
+  list-style-type: none;
+  display: flex;
+  padding-right: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  padding: 20px;
+  color: black;
+}
+
+.section1 {
+  background-color: #4b32bb;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.btn {
+  background-color: white;
+  color: #4b32bb;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.section2 {
+  background-color: #f4f4f4;
+  padding: 120px 0;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: large;
+}
+
+.section2 p {
+  width: 80%;
+}
+
+.section3 {
+  padding: 120px 0;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-item {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+.skill-item:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section4 {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-item {
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  height: 400px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-item:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s;
+}
+
+.project-image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.project-details {
+  padding: 10px;
+}
+
+.project-details a {
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 20px;
+  color: rgb(17, 166, 185);
+}
+
+.projects {
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+footer {
+  background-color: #4b32bb;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .inner-head {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nav-links li a {
+    padding: 10px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .section2 p {
+    width: 90%;
+  }
+
+  .skills {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .inner-head {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section2 p {
+    width: 90%;
+  }
+
+  .skills {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-item {
+    width: 80%;
+    height: auto;
+  }
+}
+@media (max-width: 400px) {
+  .inner-head {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section2 p {
+    width: 90%;
+  }
+
+  .skills {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-item {
+    width: 80%;
+    height: auto;
+  }
+}
