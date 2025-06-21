@@ -209,11 +209,16 @@ footer {
 
   .nav-links li a {
     padding: 5px;
+    border-right: 1px solid #4b32bb;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .nav-links li:last-child a {
+    border-right: none;
   }
   ul.nav-links {
     padding: 0px;
     margin-top: 20px;
-    column-gap: 30px;
   }
 
   .section2 p {
