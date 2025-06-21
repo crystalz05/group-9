@@ -213,7 +213,7 @@ footer {
   ul.nav-links {
     padding: 0px;
     margin-top: 20px;
-    gap: 20px;
+    column-gap: 30px;
   }
 
   .section2 p {
